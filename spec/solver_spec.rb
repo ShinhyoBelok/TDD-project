@@ -1,3 +1,5 @@
+require_relative '../solver'
+
 describe Solver do
   solver = Solver.new
 
@@ -11,7 +13,7 @@ describe Solver do
     end
 
     it "Should return raise an error message when n is negative" do
-      expect(solver.factorial(-3)).to raise_error("Please input a positive number")
+      expect{ solver.factorial(-3) }.to raise_error("Please input a positive number", StandardError)
     end
   end
 
@@ -32,6 +34,7 @@ describe Solver do
       expect(solver.fizzbuzz(24)).to eq '24'
     end
   end
+  
   context "when reverse method get reversed string" do
     it "reverse return reversed string" do
       expect(solver.reverse('hello')).to eq 'olleh'

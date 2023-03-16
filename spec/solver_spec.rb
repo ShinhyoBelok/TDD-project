@@ -31,7 +31,7 @@ describe Solver do
     end
 
     it "Any other case, return N as a string" do
-      expect(solver.fizzbuzz(24)).to eq '24'
+      expect(solver.fizzbuzz(29)).to eq '29'
     end
   end
   

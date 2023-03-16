@@ -1,17 +1,27 @@
+# frozen_string_literal: true
+
+# Solver provide methods for factorial number, fizzbuzz adn reversed string
 class Solver
   def factorial(num)
-    if num == 0
+    if num.zero?
       return 1
-    elsif num < 0
-      raise StandardError.new "Please input a positive number"
+    elsif num.negative?
+      raise StandardError, 'Please input a positive number'
     else
-      num = factorial(num-1) * num
+      num = factorial(num - 1) * num
     end
-    return num
+
+    num
   end
 
-  def fizzbuzz(n)
-    (n % 3 == 0  && n % 5 == 0) ? 'fizzbuzz' : (n % 3 == 0) ? 'fizz' : (n % 5 == 0) ? 'buzz' : n.to_s
+  def fizzbuzz(num)
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    else
+      (num % 5).zero? ? 'buzz' : num.to_s
+    end
   end
 
   def reverse(str)

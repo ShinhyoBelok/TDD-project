@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 require_relative '../solver'
 
-# rubocop:disable Metrics/BlockLength
 describe Solver do
   solver = Solver.new
 
@@ -45,4 +42,3 @@ describe Solver do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Solver provide methods for factorial number, fizzbuzz adn reversed string
 class Solver
   def factorial(num)

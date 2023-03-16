@@ -26,4 +26,10 @@ describe Solver do
       expect(solver.fizzbuzz(24)).to eq '24'
     end
   end
+  context "when reverse method get reversed string" do
+    it "reverse return reversed string" do
+      expect(solver.reverse('hello')).to eq 'olleh'
+      expect(solver.reverse('hello world')).to eq 'dlrow olleh'
+    end
+  end
 end

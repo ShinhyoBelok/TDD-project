@@ -2,9 +2,15 @@ describe Solver do
   solver = Solver.new
 
   context "When factorial method gets called" do
-    it "Should return the factorial of the input number" do
+    it "should return the factorial of the number when n is positive" do
       expect(solver.factorial(6)).to eq 720
+    end
+
+    it "should return 1 when n is 0" do
       expect(solver.factorial(0)).to eq 1
+    end
+
+    it "Should return raise an error message when n is negative" do
       expect(solver.factorial(-3)).to raise_error("Please input a positive number")
     end
   end

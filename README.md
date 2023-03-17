@@ -17,6 +17,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
 - [👥 Author](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐ Show your support](#support)
 - [📝 License](#license)
@@ -87,6 +88,14 @@ Clone this repository to your desired folder:
 - Twitter : [@OsvaldoBarrio20](https://twitter.com/OsvaldoBarrio20)
 - GitHub  : [@OsvaldoBC](https://github.com/OsvaldoBC)
 - LinkedIn: [osvaldo-barrios-data-science](https://linkedin.com/in/osvaldo-barrios-data-science)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Least common multiple**
+- [ ] **Calculator**
+- [ ] **Equations solving**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
